@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiKanban\TodoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return 'welcome';
 });
+
+//Api "Todo" routes kanban
+Route::get('todo', [TodoController::class, 'getTodo']);
+
