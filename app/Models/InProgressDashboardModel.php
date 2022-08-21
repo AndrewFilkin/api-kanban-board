@@ -5,9 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class inProgress extends Model
+class InProgressDashboardModel extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['title'];
 }
