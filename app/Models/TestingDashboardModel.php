@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class TestingDashboardModel extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+    ];
 }

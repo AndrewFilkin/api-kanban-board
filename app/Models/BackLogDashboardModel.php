@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class BackLogDashboardModel extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+    ];
+
 }

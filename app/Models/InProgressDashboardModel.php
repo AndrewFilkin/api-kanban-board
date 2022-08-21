@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class InProgressDashboardModel extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+    ];
 }

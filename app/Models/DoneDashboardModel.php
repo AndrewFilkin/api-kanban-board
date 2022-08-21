@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class DoneDashboardModel extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+    ];
 }
