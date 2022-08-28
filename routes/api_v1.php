@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiKanban\TodoController;
+use App\Http\Controllers\ApiKanban\BackLogDashboardController;
+use App\Http\Controllers\ApiKanban\CreateEntryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,7 @@ Route::get('/', function () {
     return 'welcome';
 });
 
-//Api "Todo" routes kanban
-Route::get('todo', [TodoController::class, 'getTodo']);
+//Api "BackLog" routes kanban
+Route::get('todo', [BackLogDashboardController::class, 'getTodo']);
+Route::post('create-entry', [CreateEntryController::class, 'createEntry']);
 
