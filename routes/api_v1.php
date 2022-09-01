@@ -21,5 +21,7 @@ Route::get('/', function () {
 
 //Api "BackLog" routes kanban
 Route::get('todo', [BackLogDashboardController::class, 'getTodo']);
-Route::post('create-entry', [CreateEntryController::class, 'createEntry']);
+Route::post('create-entry', [BackLogDashboardController::class, 'createEntry']);
+Route::put('update-entry/{id}', [BackLogDashboardController::class, 'updateEntry']);
+Route::delete('delete-entry/{id}', [BackLogDashboardController::class, 'deleteEntry']);
 

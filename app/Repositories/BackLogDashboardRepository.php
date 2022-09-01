@@ -14,4 +14,14 @@ class BackLogDashboardRepository extends CoreRepository {
         return $this->startConditions()->all();
     }
 
+    public function getEdit($id)
+    {
+        return $this->startConditions()->find($id);
+    }
+
+    public function deleteEntry($id)
+    {
+        return $this->startConditions()->find($id);
+    }
+
 }
